@@ -1,23 +1,25 @@
 package cotroller.edu;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class FrontController
+ * Servlet implementation class ServiceController
  */
-public class FrontController extends HttpServlet {
+@WebServlet("/ServiceController")
+public class ServiceController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FrontController() {
+    public ServiceController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,16 +38,9 @@ public class FrontController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		/**
-		 * If not logged in redirect him to login page
-		 */
-		response.sendRedirect("accounts.jsp");
-		/**
-		 *  redirect to Service controller
-		 *   
-		 */
-		/*RequestDispatcher rd = request.getRequestDispatcher("service controller");
-		rd.forward(request, response);*/
+		//doGet(request, response);
+		String name = request.getParameter("username");
+		//PrintWriter pd = new PrintWriter("text");
 	}
 
 }

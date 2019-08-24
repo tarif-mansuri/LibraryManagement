@@ -8,7 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Its Redirecting</h1>
-	<p>hello</p>
+	<form action="/LibraryManagement/ServiceController" method="POST" >
+		UserName: <input type="text" name="username"> <br />
+		Password: <input type="text" name="password" /> <input type="submit"
+			value="Submit" />
+	</form>
+
 </body>
 </html>
