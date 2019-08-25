@@ -39,7 +39,7 @@ public class FrontController extends HttpServlet {
 		/**
 		 * If not logged in redirect him to login page
 		 */
-		response.sendRedirect("accounts.jsp");
+		response.sendRedirect("welcome-page.jsp");
 		/**
 		 *  redirect to Service controller
 		 *   

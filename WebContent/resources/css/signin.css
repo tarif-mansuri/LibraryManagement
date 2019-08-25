@@ -1,0 +1,11 @@
+.form-class{
+	position:absolute;
+	left:400px;
+	top:200px;
+	color:#fff;
+	display:inline;
+}
+input {
+	border: none;
+  border-radius: 4px;
+}

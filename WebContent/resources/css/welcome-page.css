@@ -1,0 +1,44 @@
+ul{
+	background-color: #05732d;
+	overflow: hidden;
+	
+}
+.left-nav-li{
+	display:inline;
+	float:left;
+}
+.right-nav-li{
+	display:inline;
+	float:right;
+}
+.left-nav-li a, .right-nav-li a{
+	padding:14px 16px;
+	display: block;
+	color:#ffffff;
+	text-align:center;
+	text-decoration: none;//removes underlines
+}
+li a:hover{
+	background-color:#2e3436;
+}
+.quote{
+	height: 300px;
+	width:700px;
+	position:absolute;
+	padding-left:100px;
+	bottom:0px;
+}
+h1{
+	color:#fff;
+}
+.container{
+	background-image:url(/LibraryManagement/resources/img/welcomepage.jpg);
+	background-size:cover;
+	height:100vh;
+	background-position:center;
+}
+.header{
+	position:fixed;
+	top: 0;
+    width: 100%;
+}
